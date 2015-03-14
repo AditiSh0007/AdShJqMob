@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Enter passcode</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <link href="MJquery.css" rel="stylesheet">
+</head>
+
+
+</head>
+
+<body onLoad="getLocation()">
+
+/* Passcode Code */
+
+  <div data-role="page" id="page1">
+    <div data-role ="header" id="head1" data-theme="b">
+    </div>
+    
+    <div data-role="main" class="ui-content" style="text-align:center">
+     <h4> Enter Passcode</h4>
+      <form method="post" action = "">
+       <label for="pswd" class="ui-hidden-accessible">Passcode:</label>
+       <input type="password" name="passw" id="pswd" placeholder="Passcode">
+         <a href="#" class= "ui-btn ui-btn-inline"> 1 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 2 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 3 </a>
+          <br/>
+         <a href="#" class= "ui-btn ui-btn-inline"> 4 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 5 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 6 </a>
+         <br/>
+         <a href="#" class= "ui-btn ui-btn-inline"> 7 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 8 </a>
+         <a href="#" class= "ui-btn ui-btn-inline"> 9 </a>
+         <br/>
+     
+        <a href="#" class= "ui-btn ui-btn-inline"> 0 </a>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline">Delete Icon</a>
+       <a href="#page2" class="ui-btn ui-corner-all ui-icon-check ui-btn-icon-notext ui-btn-inline">Check Icon</a>
+  </div>
+<div data-role="footer" id="foot1" style="text-align:center;" data-theme="b"> 
+</div>
+
+</div>
+
+
+
+<div data-role="page" id="page2">   
+   
+    <div data-role="header" id="head2" data-theme="b">
+        <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+        <p style="text-align:center;"> Apps </p>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+     </div> 
+   
+  <div data-role="main" class="ui-content" style="text-align:center">
+       <a href="#page3" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-top ui-btn-inline">Contacts</a>
+       <a href="#page4" class="ui-btn ui-corner-all ui-icon-comment ui-btn-icon-top ui-btn-inline"> Message </a>
+       <a href="#page5" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-top ui-btn-inline"> GPS </a> <br/>
+       <a href="#page6" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-top ui-btn-inline"> Mail </a>
+       <a href="#page7" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-top ui-btn-inline">Calender</a> <br/>
+       <a href="#page8" class="ui-btn ui-corner-all ui-icon-gear ui-btn-icon-top ui-btn-inline"> Settings </a>
+  </div><div data-role="footer" id="foot2" style="text-align:center;" data-theme="b"> 
+</div>
+	
+ </div>
+
+/* Contact page code */
+//COntct
+
+   
+  <div data-role="page" id="page3" data-add-back-btn="true">
+   <div data-role="panel" id="myPanel"> 
+    <h2>Abhinav</h2>
+    <p> Mobile :- 408-480-4566 </p>
+    <p> Landline :-408-536-8965</p>
+       <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div>
+  <div data-role="header" id="head3" data-theme="b">
+      <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+       <p style="text-align:center;"> Contacts </p>
+      <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+  </div> 
+   <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true">
+       <li><a href="#myPanel"> Abhinav </a></li>
+       <li><a href="#"> Abhirupa </a></li>
+       <li><a href="#"> Kavitha </a></li>
+       <li><a href="#"> Kunal </a></li>
+    </div>
+ 	
+ <div data-role="footer" id="foot3" style="text-align:center;" data-theme="b"> 
+</div>
+</div>
+
+/* Message page code */
+
+<div data-role="page" id="page4">
+
+    <div data-role="header" id="head4" data-theme="b">
+        <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+        <p style="text-align:center;"> Message </p>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+     </div> <br/>
+
+    <div data-role="main" class="ui-content" >
+    <div data-role="collapsible" data-collapsed="true">
+      <h1>123456789</h1>
+      <p> hi, how are you?</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+      <h1>9878999</h1>
+      <p>In meeting.</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+      <h1>78656777</h1>
+      <p>I am fine thnks.</p>
+    </div>
+    
+  </div>	
+ <div data-role="footer" id="foot4" style="text-align:center;" data-theme="b">
+
+</div>
+</div>
+/* Location page code */
+
+<div data-role="page" id="page5">
+    <div data-role="header" id="head5" data-theme="b">
+       <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+      <p style="text-align:center;"> Your Current Location </p>
+       <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+    </div>
+  
+   <div data-role="main" class="ui-content">
+     
+    <div id="mapholder" style="text-align:centre;margin-left: auto;margin-right: auto;width: 40%;">
+     </div>
+   </div>  <div data-role="footer" id="foot5" style="text-align:center;" data-theme="b"> 
+</div>
+</div>
+/*Mail code */
+
+<div data-role="page" id="page6">
+
+   
+  <div data-role="panel" id="iPanel"> 
+     <ul data-role="listview" data-autodividers="true" data-filter="true">
+          <li data-role="divider"><h2>Abc</h2></li>
+          <li><a href="#mypanel2"> test mail </a></li>
+          <li><a href="#"> Rent.com </a></li>
+      </ul><a href="#pageten" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+   </div>
+ 
+    <div data-role="header" id="head6" data-theme="b">
+        <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+        <p style="text-align:center;"> Mail </p>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+     </div> <br/>
+
+  <div data-role="main" class="ui-content">
+    <h2> Email Account</h2>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#iPanel">Inbox<span class="ui-li-count">15</span></a></li>
+      <li><a href="#">Sent Items<span class="ui-li-count">9</span></a></li>
+      <li><a href="#">Draft<span class="ui-li-count">4</span></a></li>
+      <li><a href="#">Spam<span class="ui-li-count">2</span></a></li>
+      <li><a href="#">Trash<span class="ui-li-count">3</span></a></li>
+    </ul>
+  </div> <div data-role="footer" id="foot6" style="text-align:center;" data-theme="b"> 
+</div>
+</div>
+
+/* Calender code */
+
+<div data-role="page" id="page7">
+     <div data-role="header" id="head7" data-theme="b">
+       <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+       <p style="text-align:center;"> Calender </p>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a> 
+     </div> 
+     <br/>    
+
+    <div data-role="main" class="ui-content" style="text-align:centre;">
+       <div id="datepicker" style="text-align:centre;margin-left: auto;margin-right: auto;width: 40%;">
+       </div>
+    </div>
+   <div data-role="footer" id="foot7" style="text-align:center;" data-theme="b"> 
+</div>
+</div>
+/* Settings */
+<div data-role="page" id="page8">
+
+     <div data-role="panel" id="myPanel1"> 
+        <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true">
+          <li data-role="divider"><h2>General</h2></li>
+          <li><a href="#mypanel2"> About </a></li>
+          <li><a href="#"> Software Update  </a></li>
+          <li><a href="#"> Date & Time</a></li>
+      </ul><a href="#page8" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+     </div>
+
+    <div data-role="panel" id="mypanel2"> 
+       <p> About the software </p>
+       <a href="#mypanel1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+
+    
+    <div data-role="panel" id="mypanel3"> 
+      
+       <form method="post" action="#">
+       <ul data-role="listview" data-autodividers="true">
+         <li><label for="points">Brightness:</label>
+           <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true"></li>
+         <li><label for="switch">Bold Text:</label>
+        <input type="checkbox" data-role="flipswitch" name="switch" id="switch"></li>
+         </ul>
+      </form>
+       <a href="#mypanel1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+
+
+    <div data-role="header" id="head8" data-theme="b">
+        <a href="#page2" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a> 
+        <p style="text-align: center;"> Settings </p>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" onclick="goBack()">Back Icon</a>
+    </div> 
+   <div data-role="main" class="ui-content">
+      <h2> Settings </h2>
+         <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true">
+           <li><a href="#myPanel1"> General </a></li>
+           <li><a href="#mypanel3"> Display & Brightness </a></li>
+           <li><a href="#"> Wi-Fi</a></li>
+           <li><a href="#"> Bluetooth </a></li>
+         </ul>
+    </div>
+	
+ <div data-role="footer" id="foot8" style="text-align:center;" data-theme="b">
+</div>
+
+</div> 
+
+<script src="MJquery.js"></script>
+</body>
+</html>
